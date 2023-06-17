@@ -7,29 +7,28 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <section>
+    <div class="image-wrapper">
+      <img src="images/image-victor.jpg" alt="">
+    </div>  
+    <div>
+      <div class="user-info">
+        <p>
+          Victor Crest
+          <span class="text-dark-gray-blue">26</span>
+        </p>
+        <p class="text-dark-gray-blue">London</p>
+      </div>
+      <div class="user-stats">
+          <p>80K<span class="text-dark-gray-blue">Followers</span></p>
+          <p>803K<span class="text-dark-gray-blue">Likes</span></p>
+          <p>1.4K<span class="text-dark-gray-blue">Photos</span></p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
