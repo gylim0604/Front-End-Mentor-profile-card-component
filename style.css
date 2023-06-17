@@ -17,14 +17,20 @@ body{
     font-weight: 400;
     font-size: 18px;
     background-color: var(--dark-cyan);
-    color: var(--very-dark-blue);
+    background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 45vw bottom 45vh, 45vw 45vh;
+    color: var(--very-dark-blue); 
+    
 }
 
 section{
     background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
-    width: 300px;
+    width: 320px;
+    /* height: 350px; */
 }
 
 
@@ -35,21 +41,23 @@ section{
 .image-wrapper{
     background: url('/images/bg-pattern-card.svg');
     position: relative;
-    padding-top:60%;
+    padding-top:40%;
 }
 
 .image-wrapper > img{
     border-radius: 50%;
     border: 5px solid white;
     position: absolute;
-    bottom: -25%;
-    left: 25%;
+    bottom: -45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .user-info{
     text-align: center;
     border-bottom: 1px solid var(--dark-gray);
-    padding: 50px 20px 20px;
+    padding: 80px 20px 30px;
 }
 
 .user-info > p:first-of-type{
@@ -57,10 +65,11 @@ section{
 }
 .user-info > p:first-of-type > span{
     font-weight: 400;
+    margin-left: 5px;
 }
 
 .user-info > p:last-of-type {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: .8rem;
 }
 .user-stats{
@@ -75,7 +84,8 @@ section{
 }
 
 .user-stats > p > span{
+    margin-top: 5px;
     font-weight: 400;
-    font-size: .8rem;
+    font-size: .7rem;
     display: block
 }
